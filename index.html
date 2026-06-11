@@ -1,67 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Max's Dream</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-
-    .container {
-      max-width: 600px;
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 18px;
-      color: #cbd5e1;
+      background: #0f172a;
+      color: #e2e8f0;
       line-height: 1.6;
     }
 
-    .btn {
-      margin-top: 20px;
-      display: inline-block;
-      padding: 10px 20px;
-      background: #3b82f6;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
     }
 
-    .btn:hover {
-      background: #2563eb;
+    header h1 {
+      font-size: 42px;
+      margin: 0;
+    }
+
+    header p {
+      color: #94a3b8;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      border-left: 4px solid #3b82f6;
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #64748b;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Max's Dream</h1>
-    <p>
-      Welcome to my personal website.<br>
-      This is where I share my ideas, projects, and dreams.
-    </p>
 
-    <a class="btn" href="https://github.com/" target="_blank">
-      My GitHub
-    </a>
-  </div>
+<header>
+  <h1>Max's Dream</h1>
+  <p>Personal Website · Projects · Thoughts · Articles</p>
+</header>
+
+<div class="container">
+
+  <!-- About -->
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      Hi, I'm Max. I like building things, learning new skills, and sharing ideas online.
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section>
+    <h2>Skills</h2>
+    <div class="card">HTML / CSS / JavaScript</div>
+    <div class="card">Data Analysis</div>
+    <div class="card">GitHub Pages Deployment</div>
+  </section>
+
+  <!-- Projects -->
+  <section>
+    <h2>Projects</h2>
+    <div class="card">
+      <strong>Personal Website</strong><br>
+      Built with GitHub Pages
+    </div>
+  </section>
+
+  <!-- Articles -->
+  <section>
+    <h2>Articles</h2>
+    <div class="card">
+      <a href="#">My First Blog Post</a>
+    </div>
+    <div class="card">
+      <a href="#">Learning HTML Basics</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 Max's Dream
+</footer>
+
 </body>
 </html>
