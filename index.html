@@ -1,31 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Max's Dream Blog</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Max's Dream</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e2e8f0;
+}
+
+/* 顶部 */
+header {
+  text-align: center;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #0f172a, #111827);
+  border-bottom: 1px solid #1f2937;
+}
+
+header h1 {
+  font-size: 48px;
+  margin: 0;
+  color: #38bdf8;
+  text-shadow: 0 0 20px #38bdf8;
+}
+
+header p {
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+/* 主容器 */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* 标题 */
+h2 {
+  margin-bottom: 20px;
+  border-left: 4px solid #38bdf8;
+  padding-left: 10px;
+}
+
+/* 卡片 */
+.card {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 14px;
+  padding: 18px;
+  margin: 15px 0;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
+}
+
+/* 链接 */
+a {
+  color: #93c5fd;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #38bdf8;
+}
+
+/* 小标签 */
+.tag {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #64748b;
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
   <h1>Max's Dream</h1>
-  <p>Personal Blog & Game Diary</p>
+  <p>RPG Profile · Blog · Achievements</p>
 </header>
 
 <div class="container">
 
-  <h2>Articles</h2>
+  <h2>📚 Blog Posts</h2>
 
   <div class="card">
     <a href="posts/post1.html">My First Blog</a>
+    <div class="tag">Unlocked: First Website</div>
   </div>
 
   <div class="card">
     <a href="posts/post2.html">Game Achievement System</a>
+    <div class="tag">RPG UI Design Experiment</div>
   </div>
 
+  <h2>🏆 Achievements</h2>
+
+  <div class="card">✔ GitHub Pages Deployed</div>
+  <div class="card">✔ First Blog Published</div>
+  <div class="card">✔ RPG Profile Created</div>
+
 </div>
+
+<footer>
+  © 2026 Max's Dream
+</footer>
 
 </body>
 </html>
