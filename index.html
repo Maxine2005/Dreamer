@@ -1,126 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Max's Dream</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Max's Dream - Game Profile</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-      line-height: 1.6;
-    }
+<link href="https://cdn.tailwindcss.com" rel="stylesheet">
 
-    header {
-      padding: 60px 20px;
-      text-align: center;
-      background: linear-gradient(135deg, #1e293b, #0f172a);
-    }
+<style>
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: white;
+  font-family: Arial;
+}
 
-    header h1 {
-      font-size: 42px;
-      margin: 0;
-    }
+.glow {
+  text-shadow: 0 0 10px #38bdf8;
+}
 
-    header p {
-      color: #94a3b8;
-      margin-top: 10px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    section {
-      margin-bottom: 50px;
-    }
-
-    h2 {
-      border-left: 4px solid #3b82f6;
-      padding-left: 10px;
-      margin-bottom: 15px;
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-
-    a {
-      color: #60a5fa;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #64748b;
-      font-size: 14px;
-    }
-  </style>
+.card {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 12px;
+  padding: 16px;
+  backdrop-filter: blur(10px);
+}
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Max's Dream</h1>
-  <p>Personal Website · Projects · Thoughts · Articles</p>
-</header>
+<div style="max-width:1000px;margin:auto;padding:30px;">
 
-<div class="container">
-
-  <!-- About -->
-  <section>
-    <h2>About Me</h2>
-    <div class="card">
-      Hi, I'm Max. I like building things, learning new skills, and sharing ideas online.
+  <!-- HEADER -->
+  <div class="card" style="display:flex;gap:20px;align-items:center;">
+    <img src="https://i.pravatar.cc/120" style="border-radius:50%;border:2px solid #38bdf8;">
+    <div>
+      <h1 class="glow" style="font-size:28px;">Max</h1>
+      <p style="color:#94a3b8;">Title: Dream Wanderer</p>
+      <p style="color:#94a3b8;">Level: 42</p>
     </div>
-  </section>
+  </div>
 
-  <!-- Skills -->
-  <section>
-    <h2>Skills</h2>
-    <div class="card">HTML / CSS / JavaScript</div>
-    <div class="card">Data Analysis</div>
-    <div class="card">GitHub Pages Deployment</div>
-  </section>
+  <br>
 
-  <!-- Projects -->
-  <section>
-    <h2>Projects</h2>
-    <div class="card">
-      <strong>Personal Website</strong><br>
-      Built with GitHub Pages
-    </div>
-  </section>
+  <!-- STATS -->
+  <div class="card">
+    <h2 class="glow">Attributes</h2>
+    <p>⚔ Strength: 72</p>
+    <p>🧠 Intelligence: 88</p>
+    <p>🎯 Focus: 81</p>
+    <p>⚡ Creativity: 95</p>
+  </div>
 
-  <!-- Articles -->
-  <section>
-    <h2>Articles</h2>
-    <div class="card">
-      <a href="#">My First Blog Post</a>
-    </div>
-    <div class="card">
-      <a href="#">Learning HTML Basics</a>
-    </div>
-  </section>
+  <br>
+
+  <!-- ACHIEVEMENTS -->
+  <div class="card">
+    <h2 class="glow">Achievements</h2>
+
+    <p>🏆 First Website Deployed</p>
+    <p>🏆 GitHub Pages Master</p>
+    <p>🏆 Data Analyst Path Started</p>
+    <p>🏆 Dream Builder</p>
+  </div>
+
+  <br>
+
+  <!-- PROJECTS -->
+  <div class="card">
+    <h2 class="glow">Projects</h2>
+
+    <p>🎮 Personal Website</p>
+    <p>📊 Data Analysis Dashboard</p>
+    <p>📁 Future Project Slot</p>
+  </div>
 
 </div>
-
-<footer>
-  © 2026 Max's Dream
-</footer>
 
 </body>
 </html>
